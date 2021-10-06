@@ -1,5 +1,6 @@
 package com.joaslen.task.configuration;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +17,7 @@ public class TestConfig {
 
     @Bean
     public boolean instancia() {
-        this.dbService.InstanciaBaseDeDados();
+        dbService.InstanciaBaseDeDados();
         return true;
     }
 

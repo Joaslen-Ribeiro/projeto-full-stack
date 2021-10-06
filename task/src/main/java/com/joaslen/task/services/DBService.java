@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.joaslen.task.domain.Todo;
-import com.joaslen.task.repository.TodoRepository;
+import com.joaslen.task.repositories.TodoRepository;
 
 @Service
 public class DBService {

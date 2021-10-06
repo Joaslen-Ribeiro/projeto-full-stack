@@ -1,4 +1,4 @@
-package com.joaslen.task.repository;
+package com.joaslen.task.repositories;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import com.joaslen.task.domain.Todo;
 public interface TodoRepository extends JpaRepository<Todo, Integer>{
 
 	@Query("SELECT obj FROM Todo obj WHERE obj.finalizado = false ORDER BY obj.dataParaFinalizar")
-	List<Todo> findAllOpen();
+	public List<Todo> findAllOpen();
 	
 	
 
