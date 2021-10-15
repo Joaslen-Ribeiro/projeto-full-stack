@@ -1,6 +1,6 @@
 <div class="container">
   <div class="badge">
-    <button class="mat-elevation-z8"  mat-stroked-button color="primary" matBadge="{{ closed }}">Tasks finalizadas</button>
+    <button (click)="finalizar()" class="mat-elevation-z8"  mat-stroked-button color="primary" matBadge="{{ closed }}">Tasks finalizadas</button>
   </div>
     <button class="nova-task mat-elevation-z8" mat-stroked-button color="primary">Nova task</button>
 
@@ -15,7 +15,7 @@
             </mat-card-header>
 
             <div class="actions">
-                <button mat-mini-fab color="primary" >
+                <button (click)="fanalizarTask(item)" mat-mini-fab color="primary" >
                     <mat-icon>done</mat-icon>
                   </button>
                   <button mat-mini-fab color="accent" >
