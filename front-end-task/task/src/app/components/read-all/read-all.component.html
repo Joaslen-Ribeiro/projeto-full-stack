@@ -2,7 +2,7 @@
   <div class="badge">
     <button (click)="finalizar()" class="mat-elevation-z8"  mat-stroked-button color="primary" matBadge="{{ closed }}">Tasks finalizadas</button>
   </div>
-    <button class="nova-task mat-elevation-z8" mat-stroked-button color="primary">Nova task</button>
+    <button routerLink="create" class="nova-task mat-elevation-z8" mat-stroked-button color="primary">Nova task</button>
 
 
     <div class="content" *ngFor="let item of list">
@@ -15,13 +15,13 @@
             </mat-card-header>
 
             <div class="actions">
-                <button (click)="fanalizarTask(item)" mat-mini-fab color="primary" >
+                <button (click)="fanalizarTask(item)" mat-mini-fab  class="btnGreen" >
                     <mat-icon>done</mat-icon>
                   </button>
                   <button mat-mini-fab color="accent" >
                     <mat-icon>edit</mat-icon>
                  </button>
-                    <button (click)="delete(item.id)" mat-mini-fab color="warn" >
+                    <button (click)="delete(item.id)" mat-mini-fab  class="btnRed">
                         <mat-icon>delete</mat-icon>
                     </button>
             </div>

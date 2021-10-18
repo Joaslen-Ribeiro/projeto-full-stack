@@ -2,6 +2,7 @@
     width: 85%;
     margin: auto;
     margin-top: 1.5rem;
+    
 
 }
 
@@ -19,6 +20,7 @@
 
 .content{
     width: 100%;
+    
 }
 
 .nova-task{
@@ -45,4 +47,10 @@ p{
 .actions button{
     margin: .5rem;
     
+}
+.btnGreen{
+    background-color: rgb(6, 175, 6);
+}
+.btnRed{
+    background-color: red;
 }
