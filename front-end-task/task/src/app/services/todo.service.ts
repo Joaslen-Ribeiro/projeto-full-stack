@@ -29,6 +29,10 @@ delete(id: any):Observable<void>{
   return this.http.delete<void>(url);
 }
 
+create(todo: Todo): Observable<Todo>{
+  return this.http.post<Todo>(this.baseUrl, todo);
+}
+
 message(msg: String): void{
   this.snack.open(`${msg}`, 'ok', {
     horizontalPosition: 'end',
