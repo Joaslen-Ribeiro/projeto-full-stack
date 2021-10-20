@@ -18,7 +18,7 @@
                 <button (click)="fanalizarTask(item)" mat-mini-fab  class="btnGreen" >
                     <mat-icon>done</mat-icon>
                   </button>
-                  <button mat-mini-fab color="accent" >
+                  <button routerLink="update/{{ item.id }}" mat-mini-fab color="accent" >
                     <mat-icon>edit</mat-icon>
                  </button>
                     <button (click)="delete(item.id)" mat-mini-fab  class="btnRed">
